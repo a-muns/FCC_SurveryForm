@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - FCC Survey Form Assignment</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<header>
+    <h1 id="title">What Are Your Favourite Apples?</h1>
+    <p id="description">Improve the future of orchards everywhere!<p>
+  </header>
+
+<!-- Green container -->
+
+<div class="container">
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input
+             type="text"
+             name="name"
+             id="name"
+             placeholder="Enter your name"required
+             />
+    </div>
+    
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input
+             type="email"
+             name="email"
+             id="email"
+             placeholder="Enter your email"required
+             />
+    </div>
+    
+    <div class="form-group">
+      <label id="number-label" for="age">How many apples have you eaten in your lifetime?</label>
+      <input
+             type="number"
+             name="number"
+             id="number"
+             min="0"
+             max="1000000"
+             placeholder="How many apples?"required
+             />
+    </div>
+    
+    <div class="form-group">
+      <p>What is your level of apple experience?
+        <select id="dropdown" name=role required>
+          <option disable selected option>Select an option</option>
+          <option value="seedling">Seedling</option>
+          <option value="sapling">Sapling</option>
+          <option value="tree">Tree</option>
+          <option value="bigmac">Big Mac</option>
+        </select>
+    </div>
+    
+    <div class="form-group">
+      <p>What is the flavour profile of your preferred apple?</p>
+      <label>
+        <input 
+               name="flavour-type"
+               type="radio"
+               value="Sweet"
+               class="input-radio"
+               checked
+               />Sweet</label>
+      <label>
+        <input
+               name="flavour-type"
+               type="radio"
+               value="tart"
+               class="input-radio"
+               />Tart</label>
+      <label>
+        <input
+               name="flavour-type"
+               type="radio"
+               value="sweet and tart"
+               class="input-radio"
+               />Sweet and Tart</label>
+    </div>
+    
+    <div class="form-group">
+      <p>Choose your top five favourite apples in this list</p>
+      <label>
+        <input
+               name="apples-eaten"
+               type="checkbox"
+               value="ambrosia"
+               class="input-checkbox"
+               />Ambrosia</label>
+      <label>
+        <input
+               name="apples-eaten"
+               type="checkbox"
+               value="golden delicious"
+               class="input-checkbox"
+               />Golden Delicious</label>
+      <label>
+        <input
+               name="apples-eaten"
+               type="checkbox"
+               value="red delicious"
+               class="input-checkbox"
+               />Red Delicious</label>
+      <label>
+        <input
+               name="apples-eaten"
+               type="checkbox"
+               value="mutsu"
+               class="input-checkbox"
+               />Mutsu</label>
+      <label>
+        <input
+               name="apples-eaten"
+               type="checkbox"
+               value="honeycrisp"
+               class="input-checkbox"
+               />Honeycrisp</label>
+      <label>
+        <input
+               name="apples-eaten"
+               type="checkbox"
+               value="macintosh"
+               class="input-checkbox"
+               />Macintosh</label>
+      <label>
+        <input
+               name="apples-eaten"
+               type="checkbox"
+               value="pink lady"
+               class="input-checkbox"
+               />Pink Lady</label>
+      <label>
+        <input
+               name="apples-eaten"
+               type="checkbox"
+               value="cortland"
+               class="input-checkbox"
+               />Cortland</label>
+      <label>
+        <input
+               name="apples-eaten"
+               type="checkbox"
+               value="Gala"
+               class="input-checkbox"
+               />Gala</label>
+      <label>
+        <input
+               name="apples-eaten"
+               type="checkbox"
+               value="red prince"
+               class="input-checkbox"
+               />Red Prince</label>
+    </div>
+    
+    <div class="form-group">
+      <p>Describe your most memorable apple experience.</p>
+      <textarea
+                id="experience"
+                name="experience"
+                class="input-textarea"
+                placeholder="Describe your apple experience"></textarea>
+    </div>
+    
+    <div class="form-group">
+  <button type="submit" id="submit" class="button">Submit</button>
+    </div>
+  </form>
+</div>
+<!-- partial -->
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
